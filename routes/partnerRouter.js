@@ -5,7 +5,7 @@ const partnerRouter = express.Router();
 // partners route
 partnerRouter
   .route("/")
-  .get((req, res) => {
+  .get((req, res, next) => {
     Partner.find()
       .then((partner) => {
         (statusCode = 200),

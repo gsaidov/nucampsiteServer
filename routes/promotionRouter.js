@@ -71,7 +71,7 @@ promotionRouter
       })
       .catch((err) => next(err));
   })
-  .delete((req, res) => {
+  .delete((req, res, next) => {
     Promotion.findByIdAndDelete(req.params.promotionId)
       .then((response) => {
         res.statusCode = 200;

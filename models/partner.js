@@ -1,4 +1,3 @@
-const { TooManyRequests } = require("http-errors");
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
